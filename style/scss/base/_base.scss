@@ -1,0 +1,169 @@
+/**
+  @author - Shan Dhiviyarajan
+  @date - <project date>
+  @email - prashasoft@gmail.com
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  //font-family: $text-font-stack;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  color: $text-color;
+}
+
+img {
+  max-width: 100%;
+
+  @media (max-width: 992px) {
+    // max-width: 50%;
+  }
+}
+
+/**
+  padding top setup
+ */
+.go__pt--elarge {
+  padding-top: 5.25rem;
+}
+.go__pt--large {
+  padding-top: 3.25rem;
+}
+.go__pt--medium {
+  padding-top: 1.25rem;
+}
+/**
+  padding bottom setup
+ */
+.go__pb--elarge {
+  padding-bottom: 5.25rem;
+}
+.go__pb--large {
+  padding-bottom: 3.25rem;
+}
+.go__pb--medium {
+  padding-bottom: 1.25rem;
+}
+
+.align-text-center {
+  text-align: center;
+}
+
+.go__home--text {
+  position: relative;
+  z-index: 1;
+  padding: 1.25rem;
+  &__dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.75rem 0.75rem;
+  }
+  &__white {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0.75rem 0.75rem;
+    p {
+      font-size: 1.15em !important;
+    }
+  }
+  &__quotation {
+    background-color: #ffffff;
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      left: 50%;
+      left: calc(50% - 40px);
+      bottom: -79px;
+      border-width: 40px;
+      border-style: solid;
+      border-color: transparent;
+      border-top-color: #fff;
+    }
+  }
+  h1 {
+    font-size: 4.05rem;
+    margin: 0;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 2.25rem;
+    }
+  }
+  h2 {
+    font-size: 1.875rem;
+    @media (max-width: 767px) {
+      font-size: 1.25rem;
+    }
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+    color: $brand-color;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.6875rem;
+    line-height: 1.18519;
+    @media (max-width: 767px) {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.section--wrap {
+  &__home {
+    background-color: #272727;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &--gradient {
+      &:after {
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.4)
+        );
+      }
+    }
+  }
+
+  &__gray {
+    background-color: #fafafa;
+  }
+
+  &__center {
+    text-align: center;
+  }
+}
+
+.go--main-wrapper {
+  padding-top: 129px;
+
+  @media (max-width: 992px) {
+    padding-top: 117px;
+  }
+}

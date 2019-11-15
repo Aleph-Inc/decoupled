@@ -1,0 +1,50 @@
+.content--section {
+  font-weight: 360;
+  font-size: 1.25rem;
+
+  @media (max-width: 767px) {
+    font-size: 1rem;
+  }
+
+  &__center {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+
+  a {
+    color: $brand-color;
+    font-weight: 560;
+  }
+
+  &__large {
+    h2 {
+      font-size: 2.25rem;
+    }
+    p {
+      font-size: 1.6875rem;
+
+      @media (max-width: 767px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.col-lg-4 {
+  text-align: center;
+}

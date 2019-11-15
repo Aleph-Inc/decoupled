@@ -1,0 +1,22 @@
+.section--wrap {
+  &.gray-background {
+    background: $light-grey;
+  }
+  &.section--wrap__center {
+    &.go__pt--large {
+      .content--section {
+        &.testimonies {
+          h1 {
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+        &.image {
+          padding-top: 50px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.top-navbar {
+  padding-top: 4px;
+  display: flex;
+  flex-direction: row-reverse;
+
+  // @media (max-width: 992px) {
+  //   display: none;
+  //   flex-direction: row;
+  // }
+
+  ul {
+    margin-bottom: 4px;
+    li {
+      padding-left: 15px;
+      list-style: none;
+      display: inline-block;
+
+      link {
+        background: black;
+        height: 33px;
+      }
+    }
+  }
+
+  select {
+    height: 33px;
+    background: black;
+    color: #fff;
+    border: none;
+
+    &.country {
+      width: 200px;
+
+      @media (max-width: 992px) {
+        width: 100px;
+      }
+    }
+
+    &.langage {
+      width: 120px;
+
+      @media (max-width: 992px) {
+        width: 100px;
+      }
+    }
+  }
+}

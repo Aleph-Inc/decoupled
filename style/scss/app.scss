@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+// Configuration
+@import "variables", "functions", "normalize", "mixins", "mixins";
+
+//Vendors
+@import "vendors/normalize";
+
+//Base
+@import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+//Components
+@import "components/header", "components/footer", "components/hero",
+  "components/common-content", "components/video-embad",
+  "components/dropshadow-block", "components/staff-member", "components/form",
+  "components/button", "components/endorsements", "components/menu",
+  "components/partner", "components/participate", "components/auth",
+  "components/testimonies", "components/dropdowns", "components/download_button";
+
+//Page-specific styles
+@import "pages/home", "pages/endorsement", "pages/explaine";

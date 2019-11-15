@@ -1,0 +1,171 @@
+/** page styles */
+
+.home--revice {
+  margin-top: -129px;
+}
+
+.hero--section {
+  &__responsive {
+    display: none;
+    text-align: center;
+
+    h1 {
+      color: $white-color;
+      font-size: 2.25rem;
+    }
+    h2 {
+      color: $white-color;
+      font-size: 1.25rem;
+    }
+
+    @media (max-width: 992px) {
+      display: block;
+    }
+    &--img {
+      background-position: center center;
+      background-size: cover;
+      min-height: 100vh;
+    }
+    &--together {
+      padding-top: 5.25rem;
+      padding-bottom: 5.25rem;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      background-color: #12152e;
+
+      &.no-padding {
+        padding: 0;
+      }
+    }
+  }
+  &__video {
+    background: #000;
+    position: relative;
+    height: 100%;
+    height: 100vh;
+    min-height: 400px;
+    overflow: hidden;
+    @media (max-width: 992px) {
+      display: none;
+    }
+    &--inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-position: 50% 50%;
+      background-size: cover;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .video--youtube {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 125%;
+        height: calc(100% + 200px);
+        opacity: 0;
+        transition: opacity 1s;
+        pointer-events: none;
+
+        @media (min-aspect-ratio: 16/9) {
+          height: 300%;
+          top: -100%;
+        }
+      }
+
+      .video--content {
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        h1 {
+          font-size: 4rem;
+          line-height: 1.25;
+          padding-bottom: 1rem;
+          padding-top: 1.25rem;
+          margin: 0;
+
+          @media (max-width: 992px) {
+            font-size: 3rem;
+          }
+        }
+        h2 {
+          font-size: 2.25rem;
+          line-height: 1.33333;
+          padding-bottom: 0.75rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.go--endorsements__carousel {
+  padding: 0 3rem;
+
+  .go--endorsements {
+    background-color: transparent;
+  }
+
+  &--item {
+    //padding: 0.75rem;
+    padding: 1rem;
+  }
+}
+
+.go--partners__home--carousel {
+  padding: 0 3rem;
+
+  .item_inner {
+    padding: 0.75rem;
+    height: 11.25rem;
+  }
+}
+
+.go--shout {
+  background-color: $brand-color;
+
+  h1 {
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    font-size: 3.375rem;
+    color: $white-color;
+
+    @media (max-width: 767px) {
+      font-size: 2.25rem;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: $white-color;
+
+    @media (max-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 2.05rem;
+    line-height: 1.22222;
+    color: $white-color;
+
+    @media (max-width: 767px) {
+      font-size: 1.5rem;
+    }
+  }
+}

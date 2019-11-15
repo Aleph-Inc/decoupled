@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn-primary {
+  color: #fff !important;
+  background-color: $brand-color;
+  border-color: $brand-color;
+
+  &:hover {
+    background-color: #e41519;
+    border-color: #cd1316;
+  }
+}

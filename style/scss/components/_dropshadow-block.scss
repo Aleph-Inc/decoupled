@@ -1,0 +1,38 @@
+.go--dropshadow {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1);
+
+  p {
+    font-size: 1.6875rem;
+
+    @media (max-width: 767px) {
+      font-size: 1.125rem;
+    }
+  }
+  a {
+    border-color: $brand-color;
+    background-color: $brand-color;
+    padding: 0.75rem;
+  }
+}
+
+.go--quote {
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  color: #3e3e3e;
+  padding: 2rem;
+  padding-left: 4rem;
+  position: relative;
+
+  i {
+    color: $brand-color;
+    font-size: 1.6875rem;
+    padding-top: 5px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+}
